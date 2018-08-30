@@ -150,6 +150,9 @@
                <property name="cursor">
                 <cursorShape>CrossCursor</cursorShape>
                </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(167, 167, 167);</string>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -167,7 +170,7 @@
            <property name="frameShadow">
             <enum>QFrame::Plain</enum>
            </property>
-           <widget class="QPushButton" name="pushButton">
+           <widget class="QPushButton" name="enlargeBtn">
             <property name="geometry">
              <rect>
               <x>10</x>
@@ -177,10 +180,10 @@
              </rect>
             </property>
             <property name="text">
-             <string>PushButton</string>
+             <string>放大</string>
             </property>
            </widget>
-           <widget class="QPushButton" name="pushButton_2">
+           <widget class="QPushButton" name="narrowBtn">
             <property name="geometry">
              <rect>
               <x>240</x>
@@ -190,10 +193,10 @@
              </rect>
             </property>
             <property name="text">
-             <string>PushButton</string>
+             <string>缩小</string>
             </property>
            </widget>
-           <widget class="QPushButton" name="pushButton_3">
+           <widget class="QPushButton" name="reductionBtn">
             <property name="geometry">
              <rect>
               <x>479</x>
@@ -203,7 +206,7 @@
              </rect>
             </property>
             <property name="text">
-             <string>PushButton</string>
+             <string>还原</string>
             </property>
            </widget>
            <widget class="QPushButton" name="pushButton_4">

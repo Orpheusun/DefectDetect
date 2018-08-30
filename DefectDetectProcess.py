@@ -36,6 +36,12 @@ class DefectDetect(QMainWindow):
 
         #截图
         self.cutImgButtom.clicked.connect(self.cutImgClicked)
+        #放大
+        self.enlargeBtn.clicked.connect(self.enlarge)
+        #缩小
+        self.narrowBtn.clicked.connect(self.narrow)
+        #还原大小
+        self.reductionBtn.clicked.connect(self.reduction)
 
     #打开图片
     @pyqtSlot()
@@ -96,8 +102,16 @@ class DefectDetect(QMainWindow):
 
     def cutImgClicked(self):
         self.image_viewer.cutImage()
-        print(self.image_viewer.cutImgEnabled)
 
+
+    def enlarge(self):
+         self.image_viewer.enlarge()
+
+    def narrow(self):
+        self.image_viewer.narrow()
+
+    def reduction(self):
+        self.image_viewer.reduction()
 
 app=QApplication(sys.argv)
 dark(app)
